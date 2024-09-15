@@ -127,7 +127,7 @@ def launch_browser_with_proxy(proxy_host, proxy_port, proxy_user, proxy_pass):
     login_button = wait.until(
         EC.element_to_be_clickable((By.XPATH, '/html/body/div[1]/div[2]/div/div/div/div[4]/button[1]')))
     login_button.click()
-
+    print("Запустил фарм")
     return driver
 
 
